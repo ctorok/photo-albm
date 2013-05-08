@@ -2,4 +2,13 @@
   - @photos.each do |photo|
     %li.photo
       = image_tag(photo.url.thumb.url)
-      = check_box_tag('photo_ids[]', photo.id)
+      = check_box_tag('photo_ids[]', photo.id, false, :id => "photo_#{photo.id}")
+
+
+/ $('input[name="photo_ids[]"]').each(function(){
+/ console.log($(this).val());
+/ });
+
+/ $('input[name="photo_ids[]"]').each(function(){
+/ console.log($(this).is(':checked'));
+/ });

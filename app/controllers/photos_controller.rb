@@ -16,4 +16,15 @@ class PhotosController < ApplicationController
   def destroy
     binding.pry
   end
+
+  def destroy_multiple
+
+    @photos = Photo.find(params[:photo_ids])
+    @photos.each do |photo|
+      product.destroy
+    end
+    # flash[:notice] = "Deleted photos!"
+    # redirect_to products_path
+  end
+  end
 end

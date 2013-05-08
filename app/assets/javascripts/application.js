@@ -7,5 +7,4 @@
 //= require 'morris/spec/vendor/raphael-2.1.0.min.js'
 //= require 'morris/morris.min.js'
 //= require 'underscore-min.js'
-//= require 'accounting.min.js'
 //= require 'albm.js'
